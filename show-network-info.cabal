@@ -4,17 +4,12 @@ cabal-version:  >=1.2
 build-type:     Simple
 author:         cerdep
 
-executable show-network-info
+executable showmyip
   hs-source-dirs:  src
   main-is:         Main.hs
   build-depends:   base >= 4
-  ghc-options:     -Wall
-
-library 
-  build-depends:   
-                   base >= 4,
-                   network-info,
-                   network
-  hs-source-dirs:  src
+                 , network-info
+                 , network
+                 , iproute
   ghc-options:     -Wall
 
